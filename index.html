@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookie essay</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="data">
+        <h3 class="data__total" id="total-cookies">0</h3>
+        <p class="data__rate" id="cookies-per-sec">0cps</p>
+        <button class="data__boost" id="cookie-booster" onClick="updateWallet()">
+        BOOST!
+        </button>
+    </div>
+    <div class="shop">
+        <div class="shop__item" id="grandma">
+        <span class="shop__item__value shop__item__count" id="grandma__count"
+        >0</span>
+        <span class="shop__item__value shop__item__title" id="grandma__title"
+        >Grandma</span>
+        <span class="shop__item__value shop__item__cost" id="grandma__cost"
+        >$C 10</span>
+        <span
+        class="shop__item__value shop__item__boost-by"
+        id="grandma__boost-by"
+        >+10</span>
+        <button
+        onClick="shopItemHandler('grandma')"
+        class="shop__item__value shop__item__buy"
+        id="grandma__buy">
+        Buy
+        </button>
+    </div>
+    <div class="shop__item" id="oven">
+        <span class="shop__item__value shop__item__count" id="oven__count"
+        >0</span>
+        <span class="shop__item__value shop__item__title" id="oven__title"
+        >Oven</span>
+        <span class="shop__item__value shop__item__cost" id="oven__cost"
+        >$C 100</span>
+        <span class="shop__item__value shop__item__boost-by" id="oven__boost-by"
+        >+100</span>
+        <button
+        onClick="shopItemHandler('oven')"
+        class="shop__item__value shop__item__buy"
+        id="oven__buy">
+        Buy
+        </button>
+    </div>
+    <div class="shop__item" id="factory">
+        <span class="shop__item__value shop__item__count" id="factory__count"
+        >0</span>
+        <span class="shop__item__value shop__item__title" id="factory__title"
+        >Factory</span>
+        <span class="shop__item__value shop__item__cost" id="factory__cost"
+        >$C 1000</span>
+        <span
+        class="shop__item__value shop__item__boost-by"
+        id="factory__boost-by"
+        >+1000</span>
+        <button
+        onClick="shopItemHandler('factory')"
+        class="shop__item__value shop__item__buy"
+        id="factory__buy">
+        Buy
+        </button>
+    </div>
+    <div class="shop__item" id="mine">
+        <span class="shop__item__value shop__item__count" id="mine__count"
+        >0</span>
+        <span class="shop__item__value shop__item__title" id="mine__title"
+        >Mine</span>
+        <span class="shop__item__value shop__item__cost" id="mine__cost"
+        >$C 10000</span>
+        <span class="shop__item__value shop__item__boost-by" id="mine__boost-by"
+        >+10000</span>
+        <button
+        onClick="shopItemHandler('mine')"
+        class="shop__item__value shop__item__buy"
+        id="mine__buy">
+        Buy
+        </button>
+    </div>
+    <div class="shop__item" id="bank">
+        <span class="shop__item__value shop__item__count" id="bank__count"
+        >0</span>
+        <span class="shop__item__value shop__item__title" id="bank__title"
+        >Bank</span>
+        <span class="shop__item__value shop__item__cost" id="bank__cost"
+        >$C 100000</span>
+        <span class="shop__item__value shop__item__boost-by" id="bank__boost-by"
+        >+100000</span>
+        <button
+        onClick="shopItemHandler('bank')"
+        class="shop__item__value shop__item__buy"
+        id="bank__buy">
+        Buy
+        </button>
+    </div>
+</body>
+</html>

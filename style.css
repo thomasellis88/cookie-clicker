@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: tomato;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.data__total {
+    font-size: 3rem;
+}
+.data__rate {
+    font-size: 1.2rem;
+}
+.data__boost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: rgb(2, 245, 14);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.data__boost:hover {
+    transition: all 0.2s ease;
+    transform: scale(1.2);
+}
+.data__boost:active {
+    transition: all 0.05s ease;
+    transform: scale(1);
+}
+.shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    gap: 12px;
+}
+.shop__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.shop__item__value {
+    width: 20%;
+}
+.shop__item__count {
+    display: flex;
+}
+.shop__item__title {
+    display: flex;
+}
+.shop__item__cost {
+    display: flex;
+}
+.shop__item__boost-by {
+    display: flex;
+}
+.shop__item__buy {
+    display: flex;
+    max-width: 50px;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    background-color: #1eff00;
+    color: #000;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.shop__item__buy:hover {
+    transition: all 0.2s ease;
+    transform: scale(1.1);
+}
+.shop__item__buy:active {
+    transition: all 0.05s ease;
+    transform: scale(1);
+}
